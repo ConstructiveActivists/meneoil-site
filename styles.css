@@ -100,14 +100,19 @@ a:hover { color: var(--ink); }
 }
 
 .brand { order: 1; }
-.topbar__cta { order: 2; margin-left: auto; }
-.nav { order: 3; flex-basis: 100%; }
+/* En movil los dos llevan margen automatico, pero caen en lineas distintas:
+   cada linea del flex reparte su propio espacio, asi que ambos quedan a la
+   derecha en vez de dividirse el hueco. */
+.langs { order: 2; margin-left: auto; }
+.topbar__cta { order: 3; margin-left: auto; }
+.nav { order: 4; flex-basis: 100%; }
 
 @media (min-width: 860px) {
   .topbar { position: sticky; top: 0; }
   .topbar__inner { gap: 12px 24px; padding-block: 14px; }
   .nav { order: 2; flex-basis: auto; }
-  .topbar__cta { order: 3; margin-left: 0; }
+  .langs { order: 3; margin-left: 0; }
+  .topbar__cta { order: 4; margin-left: 0; }
 }
 
 .brand { display: flex; align-items: center; flex: 0 0 auto; }
@@ -127,6 +132,31 @@ a:hover { color: var(--ink); }
 
 /* .nav a gana en especificidad a .btn: el boton se quedaba negro sobre negro. */
 .nav a.btn, .nav a.btn:hover { color: var(--white); }
+
+/* ----------------------------------------------------------- idiomas */
+
+/* ES / EN. El idioma activo no es un enlace: es texto, con aria-current.
+   Un enlace que lleva a la pagina en la que ya estas es ruido para quien
+   navega con teclado o lector de pantalla. */
+.langs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+  margin-block: 0;
+  font-size: var(--t-eyebrow);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+}
+.langs > * + *::before {
+  content: "/";
+  margin-right: 8px;
+  color: var(--rule-2);
+}
+.langs a { color: var(--ink-2); text-decoration: none; padding-block: 9px; }
+.langs a:hover { color: var(--green); }
+.langs [aria-current] { color: var(--ink); }
 
 /* ------------------------------------------------------------------ botones */
 

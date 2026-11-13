@@ -4,11 +4,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mene Oil Services — Procurement for the oil sector</title>
-<meta name="description" content="Surface facilities and midstream supply, wellhead to export. We compare sources, close the order and assemble the compliance file on every order. No-cost diagnostic under NDA.">
+<title>Mene Oil — The pioneering B2B platform for Venezuela's oil sector</title>
+<meta name="description" content="B2B marketplace for oil-sector procurement in Venezuela. Suppliers in Venezuela and abroad, compliance built into every order (OFAC, KYC, AML) and offers compared on the cost delivered to site.">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-<meta property="og:title" content="Mene Oil Services — Procurement for the oil sector">
-<meta property="og:description" content="Surface facilities & midstream supply: wellhead to export.">
+<meta property="og:title" content="Mene Oil — The pioneering B2B platform for Venezuela's oil sector">
+<meta property="og:description" content="Wellhead to export: find the part, compare suppliers and buy with the compliance file ready.">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="es_VE">
 <meta property="og:type" content="website">
@@ -19,8 +19,8 @@
 <link rel="alternate" hreflang="x-default" href="https://meneoil.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles-v1.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
@@ -28,55 +28,147 @@
 
 <header class="topbar">
   <div class="wrap topbar__inner">
-    <a class="brand" href="./" aria-label="Mene Oil Services, home">
+    <a class="brand" href="./" aria-label="MeneOil.com, home">
       <img src="../assets/mene-logo.png" alt="Mene Oil Services" width="2075" height="682">
     </a>
     <nav class="nav" aria-label="Main">
-      <a href="#what-we-do">What we do</a>
-      <a href="#how-we-work">How we work</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#technology">Technology</a>
+      <a href="#services">Services</a>
+      <a href="#segments">Segments</a>
+      <a href="#suppliers">Suppliers</a>
       <a href="#compliance">Compliance</a>
     </nav>
     <p class="langs">
       <a href="../" hreflang="es" lang="es">ES</a>
       <span aria-current="true">EN</span>
     </p>
-    <a class="btn btn--small" href="#contact">Request the diagnostic</a>
+    <a class="btn btn--small topbar__cta" href="#diagnostic">No-cost diagnostic</a>
   </div>
 </header>
 
 <main id="content">
 
-  <section class="hero">
+  <section class="hero" id="top">
     <div class="wrap">
-      <div class="sheet">
-        <img class="hero__mark" src="../assets/mene-mark.png" alt="Mene Oil Services"
-             width="2000" height="2000" fetchpriority="high">
-        <h1>Save time and money on your procurement</h1>
-        <p class="lede">
-          Surface facilities and midstream supply, wellhead to export, with the
-          compliance file assembled on every order.
-        </p>
-        <div class="actions">
-          <a class="btn" href="#contact">Request the diagnostic</a>
-          <a class="link" href="#what-we-do">See how it works</a>
+      <p class="eyebrow">B2B marketplace · Oil and gas · Venezuela</p>
+      <h1>The pioneering B2B platform for Venezuela's oil sector.</h1>
+      <p class="hero__promesa">We are your procurement team's ally.</p>
+      <p class="lede">
+        Wellhead to export: find the part, compare suppliers in Venezuela and
+        abroad on the cost delivered to site, and buy with the compliance file
+        assembled inside the same order. Fewer days with idle equipment, better
+        prices and terms built around you.
+      </p>
+
+      <form class="seek" id="seeker" action="#diagnostic">
+        <div class="field field--wide">
+          <label for="q">What do you need?</label>
+          <input id="q" name="q" type="search" autocomplete="off"
+                 placeholder="e.g. API 6D ball valve, 2 inch, class 600">
         </div>
-      </div>
+        <div class="field field--pick">
+          <label for="seg">Segment</label>
+          <select id="seg" name="seg">
+            <option>All segments</option>
+            <option>Wellhead and Christmas tree</option>
+            <option>Flowlines and gathering</option>
+            <option>Separation and treatment</option>
+            <option>Pumping and compression</option>
+            <option>Metering and instrumentation</option>
+            <option>Safety, HSE and fire protection</option>
+          </select>
+        </div>
+        <button class="btn btn--green" type="submit">Request prices</button>
+        <p class="seek__note">
+          Today a person handles every request: tell us what you need and we
+          come back with options and the cost delivered to site.
+        </p>
+      </form>
+
+      <ul class="tags">
+        <li class="tags__label">Most requested:</li>
+        <li><a href="#segments">API 6D valves</a></li>
+        <li><a href="#segments">ASME B16.5 flanges</a></li>
+        <li><a href="#segments">Choke inserts</a></li>
+        <li><a href="#segments">PPE and gas detectors</a></li>
+      </ul>
     </div>
   </section>
 
+  
+  <div class="cinta" role="region" aria-label="Product families we buy">
+    <div class="cinta__pista">
+      <ul class="cinta__grupo">
+        <li>API 6D ball valves</li>
+        <li>Wellheads and Christmas trees</li>
+        <li>ASME B16.5 flanges</li>
+        <li>API 5L line pipe</li>
+        <li>Portable gas detectors</li>
+        <li>Centrifugal pumps</li>
+        <li>Two- and three-phase separators</li>
+        <li>Storage tanks</li>
+        <li>Gas compressors</li>
+        <li>Flow meters</li>
+        <li>Starters and switchboards</li>
+        <li>FR flame-resistant clothing</li>
+        <li>Safety footwear</li>
+        <li>Mechanical seals</li>
+        <li>Relief valves</li>
+        <li>Choke inserts</li>
+        <li>Flowlines and gathering lines</li>
+        <li>Fire protection systems</li>
+        <li>Pressure and temperature instrumentation</li>
+        <li>Production manifolds</li>
+        <li>Marine loading arms</li>
+        <li>Pneumatic actuators</li>
+        <li>Hoses and fittings</li>
+        <li>MRO spares</li>
+      </ul>
+      <ul class="cinta__grupo" aria-hidden="true">
+        <li>API 6D ball valves</li>
+        <li>Wellheads and Christmas trees</li>
+        <li>ASME B16.5 flanges</li>
+        <li>API 5L line pipe</li>
+        <li>Portable gas detectors</li>
+        <li>Centrifugal pumps</li>
+        <li>Two- and three-phase separators</li>
+        <li>Storage tanks</li>
+        <li>Gas compressors</li>
+        <li>Flow meters</li>
+        <li>Starters and switchboards</li>
+        <li>FR flame-resistant clothing</li>
+        <li>Safety footwear</li>
+        <li>Mechanical seals</li>
+        <li>Relief valves</li>
+        <li>Choke inserts</li>
+        <li>Flowlines and gathering lines</li>
+        <li>Fire protection systems</li>
+        <li>Pressure and temperature instrumentation</li>
+        <li>Production manifolds</li>
+        <li>Marine loading arms</li>
+        <li>Pneumatic actuators</li>
+        <li>Hoses and fittings</li>
+        <li>MRO spares</li>
+      </ul>
+    </div>
+  </div>
+
   <section class="band">
     <div class="wrap">
-      <h2 class="section-title">Your procurement costs more than the invoice says</h2>
-      <div class="cols">
-        <div class="col">
+      <div class="intro">
+        <h2>Procurement costs more than the invoice says.</h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="card">
           <h3>Idle equipment</h3>
           <p>Every day without the part is production that never leaves the field.</p>
         </div>
-        <div class="col">
+        <div class="card">
           <h3>Prices never compared</h3>
           <p>Scattered suppliers and quotes nobody checks against each other in time.</p>
         </div>
-        <div class="col">
+        <div class="card">
           <h3>Sanctions exposure</h3>
           <p>One counterparty vetted badly puts the whole operation at risk.</p>
         </div>
@@ -84,205 +176,343 @@
     </div>
   </section>
 
-  <section class="band band--paper2" id="what-we-do">
-    <div class="wrap split">
-      <div class="split__rail">
-        <h2>A procurement platform that works with AI agents</h2>
-        <p class="rail-note">
-          Designed from day one to run as an end-to-end automated workflow.
+  <section class="band" id="how-it-works">
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow">The MeneOil flywheel</p>
+        <h2>Every order makes the next one better.</h2>
+        <p class="lede">
+          The more buyers order through the platform, the more suppliers
+          compete. Better prices bring more buyers, and every order leaves
+          data that improves the terms for all of them.
         </p>
       </div>
-      <div class="split__main">
-        <ol class="flow">
-          <li>
-            <h3>Your data</h3>
-            <p>Orders, prices, lead times and suppliers, exactly as you keep them today.</p>
-          </li>
-          <li>
-            <h3>Analysis</h3>
-            <p>The agents find where the time goes and where the money goes.</p>
-          </li>
-          <li>
-            <h3>Supplier network</h3>
-            <p>Venezuela, the United States and other origins, compared side by side.</p>
-          </li>
-          <li>
-            <h3>A compliant order</h3>
-            <p>Automated purchasing, with your compliance file assembled as it goes.</p>
-          </li>
-        </ol>
+
+      <div class="wheel">
+        <div class="wheel__col">
+          <div class="step">
+            <span class="step__n" aria-hidden="true">1</span>
+            <div>
+              <h3>Buyers post what they need</h3>
+              <p>Companies in the sector order through the platform, with the datasheet and the standard.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step__n" aria-hidden="true">2</span>
+            <div>
+              <h3>Suppliers compete for every request</h3>
+              <p>Local and international suppliers quote against the same specification.</p>
+            </div>
+          </div>
+        </div>
+
+        <svg class="star" viewBox="0 0 640 640" role="img"
+             aria-label="The MENE star as a wheel: a hub with ten spokes, turning.">
+          
+          <defs>
+            <g id="rayo">
+              <path class="star__ray" d="M0,-56 C5,-62 13.7,-80 13.7,-95 C11.5,-113 4.2,-147 0,-174 C-4.2,-147 -11.5,-113 -13.7,-95 C-13.7,-80 -5,-62 0,-56 Z"/>
+              <path class="star__ray" d="M0,-177 C5,-201 13.2,-223 15.7,-248 C15.7,-261.3 8.7,-272 0,-272 C-8.7,-272 -15.7,-261.3 -15.7,-248 C-13.2,-223 -5,-201 0,-177 Z"/>
+            </g>
+          </defs>
+
+          <g class="star__spin">
+            <circle class="star__orbit" cx="320" cy="320" r="302"/>
+            <path class="star__arrow" d="M308,6 L332,20 L308,34 Z"/>
+          </g>
+
+          <g transform="translate(320,320)">
+            <use href="#rayo" transform="rotate(0)"/>
+            <use href="#rayo" transform="rotate(36)"/>
+            <use href="#rayo" transform="rotate(72)"/>
+            <use href="#rayo" transform="rotate(108)"/>
+            <use href="#rayo" transform="rotate(144)"/>
+            <use href="#rayo" transform="rotate(180)"/>
+            <use href="#rayo" transform="rotate(216)"/>
+            <use href="#rayo" transform="rotate(252)"/>
+            <use href="#rayo" transform="rotate(288)"/>
+            <use href="#rayo" transform="rotate(324)"/>
+
+            <circle class="star__cog" cx="16.7" cy="-51.5" r="7.4"/>
+            <circle class="star__cog" cx="43.8" cy="-31.9" r="7.4"/>
+            <circle class="star__cog" cx="54.2" cy="-0.0" r="7.4"/>
+            <circle class="star__cog" cx="43.8" cy="31.9" r="7.4"/>
+            <circle class="star__cog" cx="16.7" cy="51.5" r="7.4"/>
+            <circle class="star__cog" cx="-16.7" cy="51.5" r="7.4"/>
+            <circle class="star__cog" cx="-43.8" cy="31.9" r="7.4"/>
+            <circle class="star__cog" cx="-54.2" cy="0.0" r="7.4"/>
+            <circle class="star__cog" cx="-43.8" cy="-31.9" r="7.4"/>
+            <circle class="star__cog" cx="-16.7" cy="-51.5" r="7.4"/>
+            <circle class="star__cog" cx="0" cy="0" r="47"/>
+            <circle class="star__ring" cx="0" cy="0" r="28"/>
+            <circle class="star__core" cx="0" cy="0" r="24"/>
+          </g>
+        </svg>
+
+        <div class="wheel__col">
+          <div class="step">
+            <span class="step__n" aria-hidden="true">3</span>
+            <div>
+              <h3>A better cost delivered to site</h3>
+              <p>We compare the total: product, freight, customs and days to delivery.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step__n" aria-hidden="true">4</span>
+            <div>
+              <h3>Every order leaves data</h3>
+              <p>Prices, lead times, supplier performance and the compliance file.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step step--close">
+        <span class="step__n" aria-hidden="true">5</span>
+        <div>
+          <h3>Better terms for everyone, and the wheel turns again</h3>
+          <p>A track record is what negotiates longer terms and financing. More buyers arrive, and more suppliers want to be here.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="band" id="offer">
-    <div class="wrap split">
-      <div class="split__rail">
-        <h2>A diagnostic of your procurement, at no cost</h2>
-      </div>
-      <div class="split__main">
-        <ol class="steps">
-          <li>
-            <h3>We sign an NDA</h3>
-            <p>Your information is protected before you show us anything.</p>
-          </li>
-          <li>
-            <h3>We analyze your data</h3>
-            <p>Your whole purchasing pattern, at no cost to you.</p>
-          </li>
-          <li>
-            <h3>We come back with a proposal</h3>
-            <p>Where to save time and money, every figure with its source.</p>
-          </li>
-          <li>
-            <h3>You decide</h3>
-            <p>If it convinces you, you hire us. The structure can include financing.</p>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  <section class="band band--paper2">
-    <div class="wrap split">
-      <div class="split__rail">
-        <h2>What the client gets</h2>
-      </div>
-      <div class="split__main">
-        <dl class="gains">
-          <div>
-            <dt>Time</dt>
-            <dd>Fewer days between the need and the delivery.</dd>
-          </div>
-          <div>
-            <dt>Money</dt>
-            <dd>Better prices and terms through our supplier network.</dd>
-          </div>
-          <div>
-            <dt>Financing</dt>
-            <dd>Tailored structures, subject to evaluation of the client and the transaction.</dd>
-          </div>
-        </dl>
-        <p class="aside">The more access we have to your data, the more savings we can validate.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="band band--areas" id="scope">
+  <section class="band band--dark" id="technology">
     <div class="wrap">
-      <h2 class="section-title">What we buy for you</h2>
-      <ol class="track">
-        <li><span class="track__n">01</span><span class="track__t">Wellhead and Christmas tree</span></li>
-        <li><span class="track__n">02</span><span class="track__t">Flowlines and gathering</span></li>
-        <li><span class="track__n">03</span><span class="track__t">Manifolds and flow stations</span></li>
-        <li><span class="track__n">04</span><span class="track__t">Separation and treatment</span></li>
-        <li><span class="track__n">05</span><span class="track__t">Tanks and storage</span></li>
-        <li><span class="track__n">06</span><span class="track__t">Pumping and compression</span></li>
-        <li><span class="track__n">07</span><span class="track__t">Metering and instrumentation</span></li>
-        <li><span class="track__n">08</span><span class="track__t">Pipelines and loading terminals</span></li>
+      <div class="intro">
+        <p class="eyebrow">The technology</p>
+        <h2>The engine that turns the wheel.</h2>
+        <p class="lede">
+          Mene Oil is not a catalogue with forms. It runs on
+          <strong>SiHay Engine</strong>, the technology layer Constructive
+          Activists builds for several industries at once: data, search,
+          marketplace and financing. Oil-sector procurement is one of them.
+        </p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 12.5l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg>
+          <h3>A data layer, not an inbox</h3>
+          <p>
+            Every requirement, quote and file comes out structured. The track
+            record belongs to the buyer, and it is what negotiates for them
+            later.
+          </p>
+        </div>
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 7H6a5 5 0 0 0 0 10h3.5"/><path d="M14.5 7H18a5 5 0 0 1 0 10h-3.5"/><path d="M8 12h8"/></svg>
+          <h3>Specifications that speak the same language</h3>
+          <p>
+            A two-inch API 6D ball valve means the same thing in the
+            requirement, in the local supplier's catalogue and in the
+            importer's. Normalizing that is half the work.
+          </p>
+        </div>
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 12h4l6-6"/><path d="M11 12l6 6"/></svg>
+          <h3>Artificial intelligence does the repetitive work</h3>
+          <p>
+            Reading requirements, cross-checking catalogues and assembling the
+            compliance file is measurable work, and it gets automated. The
+            purchase decision does not: a person makes that, and it stays
+            that way.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--white" id="services">
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow">The platform</p>
+        <h2>Six services, one flow.</h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <h3>Parts search</h3>
+          <p>A catalogue normalized by standard (API, ASME), brand and specification.</p>
+        </div>
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg>
+          <h3>Price comparison</h3>
+          <p>The cost delivered to site, not just the list price.</p>
+        </div>
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v12H8l-4 4z"/><path d="M8 9h8"/><path d="M8 12h5"/></svg>
+          <h3>Quotes in parallel</h3>
+          <p>One request to several suppliers at once, compared in a single table.</p>
+        </div>
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <h3>Compliance on every order</h3>
+          <p>OFAC, KYC and AML review of every counterparty, with a file.</p>
+        </div>
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg>
+          <h3>Tailored financing</h3>
+          <p>Terms and structures subject to evaluation of the client and the transaction.</p>
+        </div>
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg>
+          <h3>Logistics and importing</h3>
+          <p>Freight, customs and delivery in the field, orchestrated with partners.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="segments">
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow">Wellhead to export</p>
+        <h2>Surface facilities and midstream, in 12 segments.</h2>
+      </div>
+      <ol class="segs">
+        <li><b>01</b> · Wellhead and Christmas tree</li>
+        <li><b>02</b> · Flowlines and gathering</li>
+        <li><b>03</b> · Manifolds and flow stations</li>
+        <li><b>04</b> · Separation and treatment</li>
+        <li><b>05</b> · Storage: tanks and yards</li>
+        <li><b>06</b> · Pumping and compression</li>
+        <li><b>07</b> · Metering and instrumentation</li>
+        <li><b>08</b> · Pipelines and transport</li>
+        <li><b>09</b> · Loading terminal and export</li>
+        <li><b>10</b> · Electrical and automation</li>
+        <li><b>11</b> · Safety, HSE and fire protection</li>
+        <li><b>12</b> · Consumables and MRO</li>
       </ol>
-      <div class="areas__notes">
-        <p>Plus the electrical, industrial safety and consumable items that serve all of the above.</p>
-        <p class="aside">Out of scope: anything that goes downhole.</p>
-      </div>
+      <p class="aside">Out of scope: anything that goes downhole.</p>
     </div>
   </section>
 
-  <section class="band" id="how-we-work">
-    <div class="wrap split">
-      <div class="split__rail">
-        <h2>One client at a time</h2>
-        <p class="rail-note">
-          A team dedicated to your operation, not split across accounts.
-        </p>
-      </div>
-      <div class="split__main">
-        <div class="cols cols--2">
-          <div class="col">
-            <h3>Confidentiality</h3>
-            <p>Your data stays under NDA and is used only for your operation.</p>
-          </div>
-          <div class="col">
-            <h3>Transparency</h3>
-            <p>Every saving we propose comes with the source that supports it.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="band band--dark" id="compliance">
-    <div class="wrap split">
-      <div class="split__rail">
-        <h2>In order on every order</h2>
-        <p class="rail-note">
-          Compliance sits inside the platform's workflow, not at the end of it.
-        </p>
-      </div>
-      <div class="split__main">
-        <dl class="checks">
-          <div>
-            <dt>OFAC</dt>
-            <dd>Sanctions screening of every counterparty before we quote.</dd>
-          </div>
-          <div>
-            <dt>KYC</dt>
-            <dd>Clients, suppliers and end users identified.</dd>
-          </div>
-          <div>
-            <dt>AML</dt>
-            <dd>Payments only through regulated banking channels, with source of funds.</dd>
-          </div>
-          <div>
-            <dt>Records</dt>
-            <dd>Every transaction documented end to end.</dd>
-          </div>
-        </dl>
-        <p class="aside aside--dark">
-          Your compliance team can ask us for our file under an NDA.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="band band--paper2" id="team">
-    <div class="wrap split">
-      <div class="split__rail">
-        <h2>Who is behind this</h2>
-      </div>
-      <div class="split__main">
-        <div class="cols cols--2">
-          <div class="col">
-            <h3>The team</h3>
-            <p>
-              A manager who runs the operation and is your single point of contact,
-              with accounting, legal and systems engineering in house.
-            </p>
-          </div>
-          <div class="col">
-            <h3>The advisory board</h3>
-            <p>
-              Five specialists in legal, U.S. procurement, field operations, compliance
-              and finance. They advise MENE; they do not represent it or bind it to
-              third parties.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="band band--close" id="contact">
+  <section class="band band--white">
     <div class="wrap">
-      <h2>Let's start with a diagnostic, at no cost</h2>
-      <p class="lede">
-        We sign an NDA and show you where your procurement can save time and money.
-      </p>
-      <p class="contact">
-        <a class="btn" href="mailto:info@meneoil.com?subject=Procurement%20diagnostic">
-          Request the diagnostic
-        </a>
-      </p>
+      <div class="intro">
+        <p class="eyebrow">The chain we connect</p>
+        <h2>Five links, one platform.</h2>
+      </div>
+      <div class="grid grid--5">
+        <div class="link-card link-card--dark">
+          <span class="link-card__n">1</span>
+          <b>Operators</b>
+          <span>Tender and contract by family</span>
+        </div>
+        <div class="link-card link-card--dark">
+          <span class="link-card__n">2</span>
+          <b>Service contractors and EPCs</b>
+          <span>Buy often and under pressure</span>
+        </div>
+        <div class="link-card">
+          <span class="link-card__n">3</span>
+          <b>Local distributors and workshops</b>
+          <span>Stock in Venezuela</span>
+        </div>
+        <div class="link-card">
+          <span class="link-card__n">4</span>
+          <b>Manufacturers</b>
+          <span>Venezuela, the U.S. and other origins</span>
+        </div>
+        <div class="link-card">
+          <span class="link-card__n">5</span>
+          <b>Raw materials and inputs</b>
+          <span>Steel, production chemicals</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="compliance">
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow">Compliance from the first click</p>
+        <h2>In Venezuela's oil sector, compliance is not a detail: it is the ground every transaction stands on.</h2>
+      </div>
+      <div class="grid grid--4">
+        <div class="card">
+          <h3>OFAC</h3>
+          <p>Sanctions screening of every counterparty before we quote.</p>
+        </div>
+        <div class="card">
+          <h3>KYC</h3>
+          <p>Buyers, suppliers and end users identified.</p>
+        </div>
+        <div class="card">
+          <h3>AML</h3>
+          <p>Payments only through regulated banking channels, with source of funds.</p>
+        </div>
+        <div class="card">
+          <h3>Records</h3>
+          <p>Every transaction documented end to end. Your compliance team can ask us for our file under an NDA.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="suppliers">
+    <div class="wrap grid grid--2">
+      <div class="pitch">
+        <p class="eyebrow">For buyers</p>
+        <h3>Fewer days, a better price, an order that holds up.</h3>
+        <p>We don't replace your procurement team: we make it stronger.</p>
+        <ul>
+          <li>Several quotes compared in one table</li>
+          <li>Cost delivered to site, and the lead time</li>
+          <li>A compliance file on every order</li>
+          <li>Payment terms built around you</li>
+        </ul>
+        <a class="btn" href="#diagnostic">Request the diagnostic</a>
+      </div>
+      <div class="pitch">
+        <p class="eyebrow">For suppliers</p>
+        <h3>Reach contractors and operators without driving the route.</h3>
+        <p>Your catalogue, in front of whoever is buying this week.</p>
+        <ul>
+          <li>Qualified requests for quotation</li>
+          <li>Your catalogue, visible by standard and specification</li>
+          <li>Payment through regulated banking channels</li>
+          <li>Registration with a compliance review</li>
+        </ul>
+        <a class="btn btn--line" href="mailto:info@meneoil.com?subject=Supplier%20registration">Register as a supplier</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--dark" id="diagnostic">
+    <div class="wrap diag">
+      <div class="diag__text">
+        <p class="eyebrow">No-cost procurement diagnostic</p>
+        <h2>We show you where you are losing time and money.</h2>
+        <ol class="diag__steps">
+          <li><b>We sign an NDA.</b> Your information is protected before you show us anything.</li>
+          <li><b>We analyze your purchasing data.</b> Orders, prices, lead times and suppliers.</li>
+          <li><b>We come back with a savings proposal,</b> every figure with its source.</li>
+          <li><b>You decide.</b> If it convinces you, we work together.</li>
+        </ol>
+      </div>
+
+      <form class="diag__form" id="form" novalidate>
+        <div class="field">
+          <label for="company">Company</label>
+          <input id="company" name="company" type="text" autocomplete="organization">
+        </div>
+        <div class="field">
+          <label for="email">Work email</label>
+          <input id="email" name="email" type="email" autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="buys">What do you buy most often?</label>
+          <input id="buys" name="buys" type="text"
+                 placeholder="e.g. valves, pump spares, PPE">
+        </div>
+        <button class="btn btn--green" type="submit">Request the diagnostic</button>
+        <p class="seek__note">
+          Your email client opens with the message written; you read it before
+          sending. Or write to us directly at
+          <a href="mailto:info@meneoil.com?subject=Procurement%20diagnostic">info@meneoil.com</a>.
+        </p>
+      </form>
     </div>
   </section>
 
@@ -290,15 +520,68 @@
 
 <footer class="foot">
   <div class="wrap foot__inner">
-    <p class="foot__legal">Caracas · Miami · New York · Houston</p>
-    <div class="foot__powered">
+    <span class="foot__mark">
+      <img src="../assets/mene-logo.png" alt="Mene Oil Services" width="2075" height="682">
+    </span>
+    <span>Mene Oil Services · Caracas · Miami · New York · Houston</span>
+    <span class="foot__powered">
       <span>Powered by</span>
       <img src="../assets/apila-capital.png" alt="APILA Capital" width="600" height="203">
       <img src="../assets/constructive-activists.png" alt="Constructive Activists" width="362" height="82">
       <img src="../assets/kapok-partners.svg" alt="KapoK Partners" width="707" height="250">
-    </div>
+    </span>
+    <span class="foot__powered">
+      <span>Technology by</span>
+      <img src="../assets/sihay.png" alt="SiHay" width="425" height="115">
+    </span>
   </div>
 </footer>
+
+<script>
+/* No server receives these forms: a message is composed and the person's own
+   mail client opens it, so they read it before sending. Nothing is stored and
+   nothing goes to a third party. With JavaScript off, the info@meneoil.com
+   link under each form still works. Same behaviour as the Spanish page. */
+(function () {
+  var inbox = "info@meneoil.com";
+
+  function text(id) {
+    var el = document.getElementById(id);
+    return el && el.value ? el.value.trim() : "";
+  }
+
+  var seeker = document.getElementById("seeker");
+  if (seeker) {
+    seeker.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var what = text("q"), seg = text("seg"), target = document.getElementById("buys");
+      if (target && what) {
+        target.value = seg && seg !== "All segments" ? what + " (" + seg + ")" : what;
+      }
+      document.getElementById("diagnostic").scrollIntoView({ behavior: "smooth" });
+      var first = document.getElementById("company");
+      if (first) { first.focus({ preventScroll: true }); }
+    });
+  }
+
+  var form = document.getElementById("form");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var body = [
+        "Company: " + (text("company") || "—"),
+        "Email: " + (text("email") || "—"),
+        "Buys most often: " + (text("buys") || "—"),
+        "",
+        "I am interested in the no-cost procurement diagnostic."
+      ].join("\n");
+      window.location.href = "mailto:" + inbox
+        + "?subject=" + encodeURIComponent("Procurement diagnostic")
+        + "&body=" + encodeURIComponent(body);
+    });
+  }
+})();
+</script>
 
 </body>
 </html>
