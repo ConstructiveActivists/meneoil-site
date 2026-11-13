@@ -295,6 +295,56 @@ h3 { font-size: var(--t-h3); }
 .band--dark .card p { color: var(--on-dark-2); }
 .band--dark .card svg { color: var(--green-lit); }
 
+/* ------------------------------------------------------------ el cintillo */
+
+/* Va pegado al hero, que tambien es oscuro: la linea verde de arriba es lo
+   unico que los separa. overflow:hidden es lo que impide que la pista, que
+   mide el doble del ancho visible, empuje el scroll horizontal de la pagina. */
+.cinta {
+  background: var(--ink);
+  border-top: 1px solid var(--green);
+  border-bottom: 1px solid var(--dark-rule);
+  overflow: hidden;
+  padding-block: 15px;
+}
+.cinta__pista { display: flex; width: max-content; }
+.cinta__grupo {
+  display: flex;
+  align-items: center;
+  margin: 0; padding: 0;
+  list-style: none;
+}
+.cinta__grupo li {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  padding-inline: 22px;
+  font-size: var(--t-small);
+  color: var(--on-dark-2);
+}
+/* El rombo es el separador, no una vineta: por eso va despues y oculto. */
+.cinta__grupo li::after {
+  content: "";
+  width: 5px; height: 5px;
+  margin-left: 22px;
+  background: var(--green-lit);
+  transform: rotate(45deg);
+}
+
+/* La pista lleva el mismo grupo dos veces, asi que correrla media pista
+   deja la segunda copia exactamente donde estaba la primera: no hay salto. */
+@media (prefers-reduced-motion: no-preference) {
+  .cinta__pista { animation: corre 64s linear infinite; }
+  .cinta:hover .cinta__pista,
+  .cinta:focus-within .cinta__pista { animation-play-state: paused; }
+}
+@keyframes corre { to { transform: translateX(-50%); } }
+
+/* Sin movimiento el cintillo se lee de corrido, deslizandolo con el dedo. */
+@media (prefers-reduced-motion: reduce) {
+  .cinta { overflow-x: auto; }
+}
+
 /* ------------------------------------------------- flywheel: la estrella */
 
 .wheel {
