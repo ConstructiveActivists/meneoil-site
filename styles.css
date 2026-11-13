@@ -290,6 +290,11 @@ h3 { font-size: var(--t-h3); }
 .card p { margin: 0; color: var(--ink-2); }
 .card svg { color: var(--green); }
 
+/* Sobre fondo oscuro la tarjeta blanca pesa demasiado: se queda el borde. */
+.band--dark .card { background: transparent; border-color: var(--dark-rule); }
+.band--dark .card p { color: var(--on-dark-2); }
+.band--dark .card svg { color: var(--green-lit); }
+
 /* ------------------------------------------------- flywheel: la estrella */
 
 .wheel {
