@@ -4,81 +4,108 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mene Oil Services — Procura para el sector petrolero</title>
-<meta name="description" content="Procura para el sector petrolero, del cabezal al embarque. Comparamos orígenes, cerramos la orden y documentamos el cumplimiento en cada paso. Diagnóstico sin costo bajo NDA.">
+<title>Mene Oil — La plataforma B2B pionera del sector petrolero venezolano</title>
+<meta name="description" content="Marketplace B2B para la procura de bienes y servicios petroleros en Venezuela. Proveedores de Venezuela y del exterior, cumplimiento integrado (OFAC, KYC, AML) y comparación de ofertas por costo puesto en sitio.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<meta property="og:title" content="Mene Oil Services — Procura para el sector petrolero">
-<meta property="og:description" content="Del cabezal al embarque. Diagnóstico de su procura sin costo, bajo NDA.">
+<meta property="og:title" content="Mene Oil — La plataforma B2B pionera del sector petrolero venezolano">
+<meta property="og:description" content="Del cabezal al embarque: encuentre la pieza, compare proveedores y compre con el expediente de cumplimiento listo.">
 <meta property="og:locale" content="es_VE">
+<meta property="og:locale:alternate" content="en_US">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://meneoil.com/">
 <link rel="canonical" href="https://meneoil.com/">
 <link rel="alternate" hreflang="es" href="https://meneoil.com/">
 <link rel="alternate" hreflang="en" href="https://meneoil.com/en/">
 <link rel="alternate" hreflang="x-default" href="https://meneoil.com/">
-<meta property="og:locale:alternate" content="en_US">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<a class="skip" href="#contenido">Saltar al contenido</a>
+<a class="skip" href="#contenido">Ir al contenido</a>
 
 <header class="topbar">
   <div class="wrap topbar__inner">
-    <a class="brand" href="./" aria-label="Mene Oil Services, inicio">
+    <a class="brand" href="./" aria-label="MeneOil.com, inicio">
       <img src="assets/mene-logo.png" alt="Mene Oil Services" width="2075" height="682">
     </a>
     <nav class="nav" aria-label="Principal">
-      <a href="#que-hacemos">Qué hacemos</a>
-      <a href="#como-trabajamos">Cómo trabajamos</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#segmentos">Segmentos</a>
+      <a href="#proveedores">Proveedores</a>
       <a href="#cumplimiento">Cumplimiento</a>
     </nav>
-    <p class="langs">
-      <span aria-current="true">ES</span>
-      <a href="en/" hreflang="en" lang="en">EN</a>
-    </p>
-    <a class="btn btn--small" href="#contacto">Pedir el diagnóstico</a>
+    <a class="btn btn--small topbar__cta" href="#diagnostico">Diagnóstico sin costo</a>
   </div>
 </header>
 
 <main id="contenido">
 
-  
-  <section class="hero">
+  <section class="hero" id="inicio">
     <div class="wrap">
-      <div class="sheet">
-        <img class="hero__mark" src="assets/mene-mark.png" alt="Mene Oil Services"
-             width="2000" height="2000" fetchpriority="high">
-        <h1>Ahorre tiempo y dinero en su procura</h1>
-        <p class="lede">
-          Compramos para el sector petrolero lo que va del cabezal al embarque,
-          con el expediente de cumplimiento armado en cada orden.
-        </p>
-        <div class="actions">
-          <a class="btn" href="#contacto">Pedir el diagnóstico</a>
-          <a class="link" href="#que-hacemos">Ver cómo funciona</a>
+      <p class="eyebrow">Marketplace B2B · Petróleo y gas · Venezuela</p>
+      <h1>La plataforma B2B pionera del sector petrolero venezolano.</h1>
+      <p class="hero__promesa">Somos el aliado de sus procesos de procura.</p>
+      <p class="lede">
+        Del cabezal al embarque: encuentre la pieza, compare proveedores de
+        Venezuela y del exterior por costo puesto en sitio, y compre con el
+        expediente de cumplimiento armado en la misma orden. Menos días con el
+        equipo parado, mejores precios y condiciones a su medida.
+      </p>
+
+      <form class="seek" id="buscador" action="#diagnostico">
+        <div class="field field--wide">
+          <label for="q">¿Qué necesita?</label>
+          <input id="q" name="q" type="search" autocomplete="off"
+                 placeholder="Ej.: válvula de bola API 6D, 2 pulgadas, clase 600">
         </div>
-      </div>
+        <div class="field field--pick">
+          <label for="seg">Segmento</label>
+          <select id="seg" name="seg">
+            <option>Todos los segmentos</option>
+            <option>Cabezal y salida del pozo</option>
+            <option>Recolección y líneas de flujo</option>
+            <option>Separación y tratamiento</option>
+            <option>Bombeo y compresión</option>
+            <option>Medición e instrumentación</option>
+            <option>Seguridad, HSE y contra incendio</option>
+          </select>
+        </div>
+        <button class="btn btn--green" type="submit">Pedir precios</button>
+        <p class="seek__note">
+          Hoy atendemos cada pedido una persona de por medio: díganos qué
+          necesita y le respondemos con opciones y precio puesto en sitio.
+        </p>
+      </form>
+
+      <ul class="tags">
+        <li class="tags__label">Más pedido:</li>
+        <li><a href="#segmentos">Válvulas API 6D</a></li>
+        <li><a href="#segmentos">Bridas ASME B16.5</a></li>
+        <li><a href="#segmentos">Insertos de choke</a></li>
+        <li><a href="#segmentos">EPP y detectores de gas</a></li>
+      </ul>
     </div>
   </section>
 
-  
   <section class="band">
     <div class="wrap">
-      <h2 class="section-title">Su procura cuesta más de lo que dice la factura</h2>
-      <div class="cols">
-        <div class="col">
+      <div class="intro">
+        <h2>La procura cuesta más de lo que dice la factura.</h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="card">
           <h3>Equipo parado</h3>
           <p>Cada día sin el repuesto es producción que no sale.</p>
         </div>
-        <div class="col">
+        <div class="card">
           <h3>Precios sin comparar</h3>
           <p>Proveedores dispersos y cotizaciones que nadie contrasta a tiempo.</p>
         </div>
-        <div class="col">
+        <div class="card">
           <h3>Riesgo de sanciones</h3>
           <p>Una contraparte mal revisada pone en riesgo toda la operación.</p>
         </div>
@@ -86,214 +113,301 @@
     </div>
   </section>
 
-  
-  <section class="band band--paper2" id="que-hacemos">
-    <div class="wrap split">
-      <div class="split__rail">
-        <h2>Una plataforma de procura que trabaja con agentes de IA</h2>
-        <p class="rail-note">
-          Diseñada desde el primer día para operar como un flujo de trabajo
-          automatizado de punta a punta.
+  <section class="band" id="como-funciona">
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow">El flywheel de MeneOil</p>
+        <h2>Cada orden hace mejor a la siguiente.</h2>
+        <p class="lede">
+          Mientras más compradores piden por la plataforma, más proveedores
+          compiten. Mejores precios atraen más compradores, y cada orden deja
+          datos que mejoran las condiciones de todos.
         </p>
       </div>
-      <div class="split__main">
-        <ol class="flow">
-          <li>
-            <h3>Sus datos</h3>
-            <p>Órdenes, precios, plazos y proveedores, tal como los lleva hoy.</p>
-          </li>
-          <li>
-            <h3>Análisis</h3>
-            <p>Los agentes encuentran dónde se pierde tiempo y dónde se pierde dinero.</p>
-          </li>
-          <li>
-            <h3>Red de proveedores</h3>
-            <p>Venezuela, Estados Unidos y otros orígenes, comparados a la vez.</p>
-          </li>
-          <li>
-            <h3>Orden en regla</h3>
-            <p>Compra automatizada, con su expediente de cumplimiento armado.</p>
-          </li>
-        </ol>
+
+      <div class="wheel">
+        <div class="wheel__col">
+          <div class="step">
+            <span class="step__n" aria-hidden="true">1</span>
+            <div>
+              <h3>Los compradores publican su requerimiento</h3>
+              <p>Las empresas del sector piden por la plataforma, con la ficha técnica y la norma.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step__n" aria-hidden="true">2</span>
+            <div>
+              <h3>Los proveedores compiten por cada pedido</h3>
+              <p>Locales e internacionales cotizan sobre la misma especificación.</p>
+            </div>
+          </div>
+        </div>
+
+        <svg class="star" viewBox="0 0 640 640" role="img"
+             aria-label="La estrella de MENE como rueda: un centro del que salen doce radios, girando.">
+          <defs>
+            <g id="rayo">
+              <path class="star__ray" d="M0,-53 C5,-100 6,-130 0,-152 C-6,-130 -5,-100 0,-53 Z"/>
+              <path class="star__ray" d="M0,-182 C8,-212 18,-228 18,-251 A22,22 0 1 0 -18,-251 C-18,-228 -8,-212 0,-182 Z"/>
+            </g>
+          </defs>
+
+          <g class="star__spin">
+            <circle class="star__orbit" cx="320" cy="320" r="302"/>
+            <path class="star__arrow" d="M308,6 L332,20 L308,34 Z"/>
+          </g>
+
+          <g transform="translate(320,320)">
+            <use href="#rayo" transform="rotate(0)"/>
+            <use href="#rayo" transform="rotate(30)"/>
+            <use href="#rayo" transform="rotate(60)"/>
+            <use href="#rayo" transform="rotate(90)"/>
+            <use href="#rayo" transform="rotate(120)"/>
+            <use href="#rayo" transform="rotate(150)"/>
+            <use href="#rayo" transform="rotate(180)"/>
+            <use href="#rayo" transform="rotate(210)"/>
+            <use href="#rayo" transform="rotate(240)"/>
+            <use href="#rayo" transform="rotate(270)"/>
+            <use href="#rayo" transform="rotate(300)"/>
+            <use href="#rayo" transform="rotate(330)"/>
+
+            <circle class="star__cog" cx="0" cy="-50" r="10"/>
+            <circle class="star__cog" cx="25" cy="-43.3" r="10"/>
+            <circle class="star__cog" cx="43.3" cy="-25" r="10"/>
+            <circle class="star__cog" cx="50" cy="0" r="10"/>
+            <circle class="star__cog" cx="43.3" cy="25" r="10"/>
+            <circle class="star__cog" cx="25" cy="43.3" r="10"/>
+            <circle class="star__cog" cx="0" cy="50" r="10"/>
+            <circle class="star__cog" cx="-25" cy="43.3" r="10"/>
+            <circle class="star__cog" cx="-43.3" cy="25" r="10"/>
+            <circle class="star__cog" cx="-50" cy="0" r="10"/>
+            <circle class="star__cog" cx="-43.3" cy="-25" r="10"/>
+            <circle class="star__cog" cx="-25" cy="-43.3" r="10"/>
+            <circle class="star__cog" cx="0" cy="0" r="50"/>
+            <circle class="star__ring" cx="0" cy="0" r="27"/>
+            <circle class="star__core" cx="0" cy="0" r="22"/>
+          </g>
+        </svg>
+
+        <div class="wheel__col">
+          <div class="step">
+            <span class="step__n" aria-hidden="true">3</span>
+            <div>
+              <h3>Mejor precio puesto en sitio</h3>
+              <p>Comparamos el costo total: producto, flete, aduana y días de entrega.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step__n" aria-hidden="true">4</span>
+            <div>
+              <h3>Cada orden deja datos</h3>
+              <p>Precios, plazos, desempeño del proveedor y expediente de cumplimiento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step step--close">
+        <span class="step__n" aria-hidden="true">5</span>
+        <div>
+          <h3>Mejores condiciones para todos, y la rueda vuelve a girar</h3>
+          <p>Con historial se negocian mejores plazos y financiamiento. Más compradores llegan, y más proveedores quieren estar.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  
-  <section class="band" id="oferta">
-    <div class="wrap split">
-      <div class="split__rail">
-        <h2>Un diagnóstico de su procura, sin costo</h2>
-      </div>
-      <div class="split__main">
-        <ol class="steps">
-          <li>
-            <h3>Firmamos un NDA</h3>
-            <p>Su información queda protegida antes de que nos muestre nada.</p>
-          </li>
-          <li>
-            <h3>Analizamos sus datos</h3>
-            <p>Toda la dinámica de compras, sin costo para usted.</p>
-          </li>
-          <li>
-            <h3>Le entregamos una contrapropuesta</h3>
-            <p>Dónde ahorrar tiempo y dinero, cada cifra con su fuente.</p>
-          </li>
-          <li>
-            <h3>Usted decide</h3>
-            <p>Si le convence, nos contrata. El esquema puede incluir financiamiento.</p>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  
-  <section class="band band--paper2">
-    <div class="wrap split">
-      <div class="split__rail">
-        <h2>Lo que gana el cliente</h2>
-      </div>
-      <div class="split__main">
-        <dl class="gains">
-          <div>
-            <dt>Tiempo</dt>
-            <dd>Menos días entre la necesidad y la entrega.</dd>
-          </div>
-          <div>
-            <dt>Dinero</dt>
-            <dd>Mejores precios y condiciones a través de nuestra red de proveedores.</dd>
-          </div>
-          <div>
-            <dt>Financiamiento</dt>
-            <dd>Esquemas a la medida, sujetos a evaluación del cliente y de la operación.</dd>
-          </div>
-        </dl>
-        <p class="aside">Mientras más acceso tengamos a sus datos, más ahorro podemos validar.</p>
-      </div>
-    </div>
-  </section>
-
-  
-  <section class="band band--areas" id="areas">
+  <section class="band band--white" id="servicios">
     <div class="wrap">
-      <h2 class="section-title">Dónde compramos por usted</h2>
-      <ol class="track">
-        <li><span class="track__n">01</span><span class="track__t">Cabezal y árbol de navidad</span></li>
-        <li><span class="track__n">02</span><span class="track__t">Líneas de flujo y recolección</span></li>
-        <li><span class="track__n">03</span><span class="track__t">Múltiples y estaciones de flujo</span></li>
-        <li><span class="track__n">04</span><span class="track__t">Separación y tratamiento</span></li>
-        <li><span class="track__n">05</span><span class="track__t">Tanques y almacenamiento</span></li>
-        <li><span class="track__n">06</span><span class="track__t">Bombeo y compresión</span></li>
-        <li><span class="track__n">07</span><span class="track__t">Medición e instrumentación</span></li>
-        <li><span class="track__n">08</span><span class="track__t">Oleoductos y terminales</span></li>
+      <div class="intro">
+        <p class="eyebrow">La plataforma</p>
+        <h2>Seis servicios, un solo flujo.</h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <h3>Buscador de partes</h3>
+          <p>Catálogo normalizado por norma (API, ASME), marca y especificación.</p>
+        </div>
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg>
+          <h3>Comparador de precios</h3>
+          <p>Costo puesto en sitio, no solo precio de lista.</p>
+        </div>
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v12H8l-4 4z"/><path d="M8 9h8"/><path d="M8 12h5"/></svg>
+          <h3>Cotizaciones en paralelo</h3>
+          <p>Una solicitud a varios proveedores a la vez, comparada en una sola tabla.</p>
+        </div>
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <h3>Cumplimiento en cada orden</h3>
+          <p>Revisión OFAC, KYC y AML de cada contraparte, con expediente.</p>
+        </div>
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg>
+          <h3>Financiamiento a la medida</h3>
+          <p>Plazos y esquemas sujetos a evaluación del cliente y de la operación.</p>
+        </div>
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg>
+          <h3>Logística e importación</h3>
+          <p>Flete, aduana y entrega en campo, orquestados con aliados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="segmentos">
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow">Del cabezal al embarque</p>
+        <h2>Facilidades de superficie y midstream, en 12 segmentos.</h2>
+      </div>
+      <ol class="segs">
+        <li><b>01</b> · Cabezal y salida del pozo</li>
+        <li><b>02</b> · Recolección y líneas de flujo</li>
+        <li><b>03</b> · Múltiples y estaciones de flujo</li>
+        <li><b>04</b> · Separación y tratamiento</li>
+        <li><b>05</b> · Almacenamiento: tanques y patios</li>
+        <li><b>06</b> · Bombeo y compresión</li>
+        <li><b>07</b> · Medición e instrumentación</li>
+        <li><b>08</b> · Oleoductos y transporte</li>
+        <li><b>09</b> · Terminal de carga y embarque</li>
+        <li><b>10</b> · Eléctrico y automatización</li>
+        <li><b>11</b> · Seguridad, HSE y contra incendio</li>
+        <li><b>12</b> · Consumibles y MRO</li>
       </ol>
-      <div class="areas__notes">
-        <p>Más lo eléctrico, la seguridad industrial y los consumibles que sirven a todo lo anterior.</p>
-        <p class="aside">Fuera del foco: lo que va dentro del pozo.</p>
-      </div>
+      <p class="aside">Fuera de alcance: equipos de fondo de pozo.</p>
     </div>
   </section>
 
-  
-  <section class="band" id="como-trabajamos">
-    <div class="wrap split">
-      <div class="split__rail">
-        <h2>Un cliente a la vez</h2>
-        <p class="rail-note">
-          Un equipo dedicado a su operación, sin repartirse entre cuentas.
-        </p>
-      </div>
-      <div class="split__main">
-        <div class="cols cols--2">
-          <div class="col">
-            <h3>Confidencialidad</h3>
-            <p>Sus datos quedan bajo NDA y se usan solo para su operación.</p>
-          </div>
-          <div class="col">
-            <h3>Transparencia</h3>
-            <p>Cada ahorro que le proponemos viene con la fuente que lo sostiene.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  <section class="band band--dark" id="cumplimiento">
-    <div class="wrap split">
-      <div class="split__rail">
-        <h2>En regla en cada orden</h2>
-        <p class="rail-note">
-          El cumplimiento está dentro del flujo de la plataforma, no al final.
-        </p>
-      </div>
-      <div class="split__main">
-        <dl class="checks">
-          <div>
-            <dt>OFAC</dt>
-            <dd>Revisión de sanciones de cada contraparte antes de cotizar.</dd>
-          </div>
-          <div>
-            <dt>KYC</dt>
-            <dd>Clientes, proveedores y usuario final identificados.</dd>
-          </div>
-          <div>
-            <dt>AML</dt>
-            <dd>Pagos solo por canal bancario, con origen de fondos.</dd>
-          </div>
-          <div>
-            <dt>Expediente</dt>
-            <dd>Cada operación, documentada de punta a punta.</dd>
-          </div>
-        </dl>
-        <p class="aside aside--dark">
-          Su oficial de cumplimiento puede pedirnos el expediente bajo NDA.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  
-  <section class="band band--paper2" id="equipo">
-    <div class="wrap split">
-      <div class="split__rail">
-        <h2>Quién está detrás</h2>
-      </div>
-      <div class="split__main">
-        <div class="cols cols--2">
-          <div class="col">
-            <h3>El equipo</h3>
-            <p>
-              Una gerencia que dirige la operación y es su punto de contacto único,
-              con contabilidad, legal e ingeniería de sistemas propias.
-            </p>
-          </div>
-          <div class="col">
-            <h3>El consejo asesor</h3>
-            <p>
-              Cinco especialistas en legal, procura en Estados Unidos, operaciones de
-              campo, cumplimiento y finanzas. Asesoran a MENE; no la representan ni la
-              obligan frente a terceros.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  <section class="band band--close" id="contacto">
+  <section class="band band--white">
     <div class="wrap">
-      <h2>Empecemos con un diagnóstico sin costo</h2>
-      <p class="lede">
-        Firmamos un NDA y le mostramos dónde su procura puede ahorrar tiempo y dinero.
-      </p>
-      <p class="contact">
-        <a class="btn" href="mailto:info@meneoil.com?subject=Diagn%C3%B3stico%20de%20procura">
-          Pedir el diagnóstico
-        </a>
-      </p>
+      <div class="intro">
+        <p class="eyebrow">La cadena que conectamos</p>
+        <h2>Cinco eslabones, una sola plataforma.</h2>
+      </div>
+      <div class="grid grid--5">
+        <div class="link-card link-card--dark">
+          <span class="link-card__n">1</span>
+          <b>Operadoras</b>
+          <span>Licitan y contratan por familia</span>
+        </div>
+        <div class="link-card link-card--dark">
+          <span class="link-card__n">2</span>
+          <b>Contratistas de servicio y EPC</b>
+          <span>Compran con urgencia y frecuencia</span>
+        </div>
+        <div class="link-card">
+          <span class="link-card__n">3</span>
+          <b>Distribuidores y talleres locales</b>
+          <span>Stock en Venezuela</span>
+        </div>
+        <div class="link-card">
+          <span class="link-card__n">4</span>
+          <b>Fabricantes</b>
+          <span>Venezuela, EE. UU. y otros orígenes</span>
+        </div>
+        <div class="link-card">
+          <span class="link-card__n">5</span>
+          <b>Materias primas e insumos</b>
+          <span>Acero, química de producción</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="cumplimiento">
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow">Cumplimiento desde el primer clic</p>
+        <h2>En el sector petrolero venezolano, el cumplimiento no es un detalle: es la base de cada operación.</h2>
+      </div>
+      <div class="grid grid--4">
+        <div class="card">
+          <h3>OFAC</h3>
+          <p>Revisión de sanciones de cada contraparte antes de cotizar.</p>
+        </div>
+        <div class="card">
+          <h3>KYC</h3>
+          <p>Identificación de compradores, proveedores y usuarios finales.</p>
+        </div>
+        <div class="card">
+          <h3>AML</h3>
+          <p>Pagos solo por canales bancarios, con origen de fondos.</p>
+        </div>
+        <div class="card">
+          <h3>Expediente</h3>
+          <p>Cada operación documentada de punta a punta. Su oficial de cumplimiento puede solicitarlo bajo NDA.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="proveedores">
+    <div class="wrap grid grid--2">
+      <div class="pitch">
+        <p class="eyebrow">Para compradores</p>
+        <h3>Menos días, mejor precio, compra en regla.</h3>
+        <p>No sustituimos a su equipo de procura: lo potenciamos.</p>
+        <ul>
+          <li>Varias cotizaciones comparadas en una tabla</li>
+          <li>Costo puesto en sitio y plazo de entrega</li>
+          <li>Expediente de cumplimiento en cada orden</li>
+          <li>Condiciones de pago a su medida</li>
+        </ul>
+        <a class="btn" href="#diagnostico">Solicitar diagnóstico</a>
+      </div>
+      <div class="pitch">
+        <p class="eyebrow">Para proveedores</p>
+        <h3>Llegue a contratistas y operadoras sin recorrer la ruta.</h3>
+        <p>Su catálogo, delante de quien está comprando esta semana.</p>
+        <ul>
+          <li>Solicitudes de cotización calificadas</li>
+          <li>Su catálogo, visible por norma y especificación</li>
+          <li>Pago por canales bancarios regulados</li>
+          <li>Registro con revisión de cumplimiento</li>
+        </ul>
+        <a class="btn btn--line" href="mailto:info@meneoil.com?subject=Registro%20como%20proveedor">Registrarme como proveedor</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--dark" id="diagnostico">
+    <div class="wrap diag">
+      <div class="diag__text">
+        <p class="eyebrow">Diagnóstico de procura sin costo</p>
+        <h2>Le mostramos dónde está perdiendo tiempo y dinero.</h2>
+        <ol class="diag__steps">
+          <li><b>Firmamos un NDA.</b> Su información queda protegida antes de que nos muestre nada.</li>
+          <li><b>Analizamos sus datos de compra.</b> Órdenes, precios, plazos y proveedores.</li>
+          <li><b>Le entregamos una contrapropuesta de ahorro,</b> con la fuente de cada número.</li>
+          <li><b>Usted decide.</b> Si le convence, trabajamos juntos.</li>
+        </ol>
+      </div>
+
+      <form class="diag__form" id="formulario" novalidate>
+        <div class="field">
+          <label for="empresa">Empresa</label>
+          <input id="empresa" name="empresa" type="text" autocomplete="organization">
+        </div>
+        <div class="field">
+          <label for="correo">Correo corporativo</label>
+          <input id="correo" name="correo" type="email" autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="compra">¿Qué compra con más frecuencia?</label>
+          <input id="compra" name="compra" type="text"
+                 placeholder="Ej.: válvulas, repuestos de bombas, EPP">
+        </div>
+        <button class="btn btn--green" type="submit">Solicitar diagnóstico</button>
+        <p class="seek__note">
+          Se abre su correo con el mensaje escrito; usted lo revisa antes de
+          enviarlo. O escríbanos directo a
+          <a href="mailto:info@meneoil.com?subject=Diagn%C3%B3stico%20de%20procura">info@meneoil.com</a>.
+        </p>
+      </form>
     </div>
   </section>
 
@@ -301,15 +415,65 @@
 
 <footer class="foot">
   <div class="wrap foot__inner">
-    <p class="foot__legal">Caracas · New York · Houston</p>
-    <div class="foot__powered">
-      <span>Powered by</span>
+    <span class="foot__mark">
+      <img src="assets/mene-logo.png" alt="Mene Oil Services" width="2075" height="682">
+    </span>
+    <span>Mene Oil Services, C.A. · Caracas · Nueva York · Houston</span>
+    <span class="foot__powered">
+      <span>Con el respaldo de</span>
       <img src="assets/apila-capital.png" alt="APILA Capital" width="600" height="203">
       <img src="assets/constructive-activists.png" alt="Constructive Activists" width="362" height="82">
       <img src="assets/kapok-partners.svg" alt="KapoK Partners" width="707" height="250">
-    </div>
+    </span>
+    <span>© 2026</span>
   </div>
 </footer>
+
+<script>
+/* Sin servidor que reciba los formularios: se arma un correo y lo abre el
+   cliente de la persona, que lo revisa antes de enviarlo. Nada se guarda
+   ni se manda a terceros. Si no hay JavaScript, el enlace a info@meneoil.com
+   que está debajo de cada formulario sigue funcionando. */
+(function () {
+  var correo = "info@meneoil.com";
+
+  function texto(id) {
+    var c = document.getElementById(id);
+    return c && c.value ? c.value.trim() : "";
+  }
+
+  var buscador = document.getElementById("buscador");
+  if (buscador) {
+    buscador.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var que = texto("q"), seg = texto("seg"), destino = document.getElementById("compra");
+      if (destino && que) {
+        destino.value = seg && seg !== "Todos los segmentos" ? que + " (" + seg + ")" : que;
+      }
+      document.getElementById("diagnostico").scrollIntoView({ behavior: "smooth" });
+      var primero = document.getElementById("empresa");
+      if (primero) { primero.focus({ preventScroll: true }); }
+    });
+  }
+
+  var formulario = document.getElementById("formulario");
+  if (formulario) {
+    formulario.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var cuerpo = [
+        "Empresa: " + (texto("empresa") || "—"),
+        "Correo: " + (texto("correo") || "—"),
+        "Compra con más frecuencia: " + (texto("compra") || "—"),
+        "",
+        "Me interesa el diagnóstico de procura sin costo."
+      ].join("\n");
+      window.location.href = "mailto:" + correo
+        + "?subject=" + encodeURIComponent("Diagnóstico de procura")
+        + "&body=" + encodeURIComponent(cuerpo);
+    });
+  }
+})();
+</script>
 
 </body>
 </html>
