@@ -1,14 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" fill="#FBFAF7"/>
-  <g stroke="#12202B" stroke-width="3.2" stroke-linecap="round">
-    <line x1="32" y1="8"  x2="32" y2="20"/>
-    <line x1="32" y1="44" x2="32" y2="56"/>
-    <line x1="8"  y1="32" x2="20" y2="32"/>
-    <line x1="44" y1="32" x2="56" y2="32"/>
-    <line x1="15" y1="15" x2="23.5" y2="23.5"/>
-    <line x1="40.5" y1="40.5" x2="49" y2="49"/>
-    <line x1="49" y1="15" x2="40.5" y2="23.5"/>
-    <line x1="23.5" y1="40.5" x2="15" y2="49"/>
+  <!-- Diez gotas, como la marca. Engrosadas a proposito: a 16 px el ancho
+       real de la gota (0,4 px) desaparece. Paleta nueva, no la de la v1. -->
+  <defs><path id="g" d="M0,-11 C1.2,-16 2.8,-20 3.2,-24 C3.2,-27.3 1.8,-30 0,-30 C-1.8,-30 -3.2,-27.3 -3.2,-24 C-2.8,-20 -1.2,-16 0,-11 Z" fill="#121412"/></defs>
+  <rect width="64" height="64" fill="#F5F5F1"/>
+  <g transform="translate(32,32)">
+    <use href="#g" transform="rotate(0)"/>
+    <use href="#g" transform="rotate(36)"/>
+    <use href="#g" transform="rotate(72)"/>
+    <use href="#g" transform="rotate(108)"/>
+    <use href="#g" transform="rotate(144)"/>
+    <use href="#g" transform="rotate(180)"/>
+    <use href="#g" transform="rotate(216)"/>
+    <use href="#g" transform="rotate(252)"/>
+    <use href="#g" transform="rotate(288)"/>
+    <use href="#g" transform="rotate(324)"/>
+    <circle r="7" fill="#121412"/>
+    <circle r="4.6" fill="#3F6E18"/>
   </g>
-  <circle cx="32" cy="32" r="8" fill="#4F7F1F"/>
 </svg>
