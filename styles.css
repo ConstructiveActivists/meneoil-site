@@ -325,6 +325,29 @@ h3 { font-size: var(--t-h3); }
 .band--dark .card p { color: var(--on-dark-2); }
 .band--dark .card svg { color: var(--green-lit); }
 
+/* --------------------------------------------- puertas antes de una orden */
+
+/* Las cuatro tarjetas de arriba dicen lo que MENE hace. Esto dice lo que
+   tiene que ocurrir ANTES de que una orden avance, que no es lo mismo: son
+   requisitos, no desempeno. Si fueran una quinta tarjeta en esa reticula se
+   leerian como una capacidad mas, que es justo la lectura falsa. De ahi el
+   tratamiento distinto: una regla verde arriba y filetes verticales, sin
+   caja ni sombra. */
+.gates { margin-top: 36px; border-top: 2px solid var(--green); padding-top: 26px; }
+
+.gates__list {
+  list-style: none; margin: 18px 0 0; padding: 0;
+  display: grid; gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+}
+.gates__list li {
+  padding-left: 18px;
+  border-left: 1px solid var(--rule-2);
+  color: var(--ink-2);
+  font-size: var(--t-small);
+}
+.gates__list b { display: block; margin-bottom: 6px; color: var(--ink); font-weight: 600; }
+
 /* ------------------------------------------------------------ el cintillo */
 
 /* Va pegado al hero, que tambien es oscuro: la linea verde de arriba es lo
